@@ -25,8 +25,8 @@
                 <th scope="row"><?php echo $periodo['id']; ?></th>
                 <td><?php echo $periodo['descricao']; ?></td>
                 <td>
-                	<a class="btn btn-info" href="/DexterEscola/admin/periodos/edit.php?id=<?php echo $periodo['id']; ?>" role="button"><span class="glyphicon glyphicon-edit"></span> Editar Período</a>
-                	<form action="/DexterEscola/admin/periodos/delete.php" method="post" class="action-delete">
+                	<a class="btn btn-info" href="/dexterescola/admin/periodos/edit.php?id=<?php echo $periodo['id']; ?>" role="button"><span class="glyphicon glyphicon-edit"></span> Editar Período</a>
+                	<form action="/dexterescola/admin/periodos/delete.php" method="post" class="action-delete">
                         <input type="hidden" name="id" value="<?php echo $periodo['id']; ?>">
                         <button type="submit" class="btn btn-danger"><span class="glyphicon glyphicon-remove"></span> Excluir Período</button>
                     </form>
@@ -39,7 +39,7 @@
     </table>
 
 	<div class="pull-right">
-    	<a class="btn btn-primary" href="/DexterEscola/admin/periodos/new.php" role="button"><span class="glyphicon glyphicon-plus"></span> Novo Período</a>
+    	<a class="btn btn-primary" href="/dexterescola/admin/periodos/new.php" role="button"><span class="glyphicon glyphicon-plus"></span> Novo Período</a>
 	</div>
 	
 	<div class="clearfix"></div>

@@ -29,7 +29,7 @@ function verificarLogin(){ // Verifica se o usuário está logado... direcionado
 	if( isset( $_SESSION['logado'] ) ){
 		return true;
 	}else{
-		header("Location:/DexterEscola/admin/login/login.php");
+		header("Location:/dexterescola/admin/login/login.php");
 	}
 }
 function isLogado(){

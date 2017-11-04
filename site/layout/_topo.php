@@ -26,10 +26,10 @@
 	<div class="container">
 	  <div class="collapse navbar-collapse">
 	  	  <ul class="nav navbar-nav">
-		    <li><a href="/DexterEscola/site/index.php">HOME</a></li>
+		    <li><a href="/dexterescola/site/index.php">HOME</a></li>
 		  </ul>
 		  <ul class="nav navbar-nav navbar-right">
-		    <li><a href="/DexterEscola/admin/login/login.php">LOGIN</a></li>
+		    <li><a href="/dexterescola/admin/login/login.php">LOGIN</a></li>
 		  </ul>
 	  </div>		
 	</div>
