@@ -11,7 +11,6 @@ function login($dados){
 		return false;
 	}
 	$retorno = aluno_login($dados['email'],$dados['senha']);
-	var_dump($retorno);
 
 	if( $retorno ){
 		$_SESSION['logado'] = true;
