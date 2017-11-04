@@ -1,4 +1,5 @@
 <?php 
+include_once dirname(dirname(dirname(__FILE__))) . "/include/data/database-login.php"; 
 
 session_start();
 
@@ -9,7 +10,8 @@ function login($dados){
 	if (!isset($dados['senha'])) {
 		return false;
 	}
-	$retorno = ['nome' => 'Lucas', 'id' => 1];
+	$retorno = aluno_login($dados['email'],$dados['senha']);
+	var_dump($retorno);
 
 	if( $retorno ){
 		$_SESSION['logado'] = true;
@@ -23,7 +25,7 @@ function login($dados){
 function deslogar(){  //Destroi as sessões de login ativa
 	session_start();
 	session_destroy();
-	header("Location:/DexterEscola/admin/login/login.php");
+	header("Location:/dexterescola/admin/login/login.php");
 }
 function verificarLogin(){ // Verifica se o usuário está logado... direcionado para pagina correta
 	if( isset( $_SESSION['logado'] ) ){

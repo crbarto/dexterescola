@@ -12,7 +12,10 @@
 	 	</div>
 		<div class="form-group">
 		    <label>Tipo</label>
-		    <input type="text" name="tipo" class="form-control" placeholder="Tipo do curso" required>
+			<select name="tipo">
+			  <option value="EAD">EAD</option> 
+			  <option value="Presencial" selected>Presencial</option>
+			</select		    
 		</div>  
 		<div class="form-group">
 		    <label>Carga Horaria</label>
